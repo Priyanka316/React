@@ -1,6 +1,6 @@
 import './App.css';
-import ClassComponent from './reactAssignment/ClassComponent';
-import FunctionalComponent from './reactAssignment/FunctionalComponent';
+import ClassComponent from './Assignment1/ClassComponent';
+import FunctionalComponent from './Assignment1/FunctionalComponent';
 
 function App() {  
   return(
