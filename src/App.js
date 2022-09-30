@@ -1,16 +1,33 @@
 import './App.css';
-import ClassComponent from './reactAssignment/ClassComponent';
-import FunctionalComponent, {SubHeading} from './reactAssignment/FunctionalComponent';
+import React from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ClassComponent from './component/ClassComponent';
+import LinkPage from './component/LinkPage';
 
-function App() {  
-  const heading = getHeading();
-  return(
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      arr:[],
+    }
+} 
+  updateUsers=(updatedUsers)=>{
+    this.setState({arr:updatedUsers})
+  }
+  render(){
+  return (
     <div className="App">
-      Hi EveryOne 
-      <FunctionalComponent SubHeading={firstName} lname={lastName}/>
-      <ClassComponent fname={firstName} lname={lastName}/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element = {<ClassComponent users = {this.state.arr} updateUsers = {this.updateUsers}/>}/>
+      <Route path='/LinkPage' element = {<LinkPage users = {this.state.arr}/>}/>
+    </Routes>
+    </BrowserRouter>
     </div>
-  )
+  );
+}
 }
 
 export default App;
+
+
