@@ -25,7 +25,7 @@ class ClassComponent extends React.Component {
     }
 
     handleShowName = () =>{
-        const updateArray = this.props.arr
+        const updateArray = this.props.users
         updateArray.push({name:this.state.name, dept:this.state.dept, rate:this.state.rate})
         this.props.updateUsers(updateArray)
         this.setState({showName:true})
