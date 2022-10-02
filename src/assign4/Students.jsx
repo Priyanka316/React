@@ -5,12 +5,12 @@ const Students = () =>{
     
     return(
         <div>
-              <p id="Title">
-              <Link className="MainTitle" to ="/">Home</Link>
-              <Link className="MainTitle" to ="/contactus">Contact Us</Link>  
+              {/* <p id="Title">
+              <Link className="MainTitle" to ="/">Home</Link>              
               <Link className="MainTitle" to ="/students">Students</Link>  
+              <Link className="MainTitle" to ="/contactus">Contact Us</Link>  
                 
-            </p>
+            </p> */}
              <h1 id="studpage">Students Details</h1>
              <button id="btn">Add new student</button>
              <table border = '1'>
@@ -23,31 +23,38 @@ const Students = () =>{
                     <th>Change</th>
                 </tr>
                 <tr>
-                    <td>Sushmitha</td>
+                    <td>Priya</td>
                     <td >25</td>
-                    <td>BSC</td>
-                    <td>2017</td>
+                    <td>CSE</td>
+                    <td>2021</td>
                     <td>edit</td>
                 </tr>
                 <tr>
-                    <td>Disha</td>
+                    <td>Gouri</td>
                     <td>25</td>
-                    <td>BE</td>
+                    <td>BSE</td>
                     <td>2018</td>
                     <td>edit</td>
                 </tr>
                 <tr>
-                    <td>Ankitha</td>
-                    <td>25</td>
+                    <td>Anita</td>
+                    <td>22</td>
                     <td>BE</td>
-                    <td>2020</td>
+                    <td>2022</td>
                     <td>edit</td>
                 </tr>
                 <tr>
-                    <td>Shamiksha</td>
+                    <td>Param</td>
                     <td>18</td>
                     <td>BAMS</td>
                     <td>2022</td>
+                    <td>edit</td>
+                </tr>
+                <tr>
+                    <td>Pritham</td>
+                    <td>23</td>
+                    <td>BioTech</td>
+                    <td>2024</td>
                     <td>edit</td>
                 </tr>
                </thead>

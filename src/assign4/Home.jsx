@@ -5,8 +5,8 @@ const Home = () =>{
         <div>
             <p className="Title">
                 <Link id="MainTitle" to ="/">Home</Link>
-                <Link id="MainTitle" to ="/ContactUs">ContactUs</Link>
                 <Link id="MainTitle" to ="/Students">Students</Link>
+                <Link id="MainTitle" to ="/ContactUs">ContactUs</Link>
             </p>
             <p id="TitlePg">Home</p>
         </div>
