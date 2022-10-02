@@ -6,7 +6,7 @@ const Home = () =>{
             <p className="Title">
                 <Link id="MainTitle" to ="/">Home</Link>
                 <Link id="MainTitle" to ="/ContactUs">ContactUs</Link>
-                <link id="MainTitle" to ="/Students">Students</link>
+                <Link id="MainTitle" to ="/Students">Students</Link>
             </p>
             <p id="TitlePg">Home</p>
         </div>
