@@ -1,43 +1,75 @@
-.App{
-  text-align: center;
+*{
+  margin: 0%;
+  padding: 0%;
 }
 body{
-  height: 800px;
-  background-image: linear-gradient(pink, lightyellow, lightgreen);  
+  background-image: linear-gradient(pink, lightyellow, lightgreen);
+  height: 1000px;
 }
-input{
-  width: 250px;
-  height: 50px;
+
+.Title{
   text-align: center;
-  border-radius: 50px;
-  border: 2px solid black;
-  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+  padding: 20px;
+ font-size: 25px;
 }
-button{
-  width: 250px;
-  height: 50px;
-  font-size: 25px;
-  border-radius: 50px;
+
+#MainTitle{
+ color: white;
+ text-decoration: none;
+ font-family: 'Times New Roman', Times, serif;
 }
-p{
+#MainTitle:hover{
+  color: rgb(219, 104, 123);
+}
+
+#TitlePg{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
-#class1{
-  width: 450px;
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-  background-color: #a3f1f1;
+#studpage{
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
 }
-#class0{
-  width: 1000px;
-  border: 2px solid black;
-  padding: 10px;
-  background-color: #f5e5a0;
-  margin-left: 120px;
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: auto auto;
+#btn{
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-size: 25px;
+  margin-left: 1000px;
+  margin-top:-50px; 
+  position: absolute;
+  background-color: rgb(223, 245, 245);
+  
+}
+.table{
+  margin-top: 50px;
+  margin-left: 30px;
+ border: none;
+ background-color: white;
+
+}
+th{
+  border-left: none;
+  border-right: none;
+  padding: 10px 70px 10px 70px;
+  background-color: rgb(148, 147, 147);
+}
+tr .table1{
+  padding-right: 400px;
+}
+table{
+  margin-left: 30px;
+  margin-top: 50px;
+  background-color: white;
+}
+td{
+  border-left: none;
+  border-right: none;
+  padding: 10px 70px 10px 70px;
 }

@@ -1,33 +1,23 @@
+// import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ClassComponent from './Assign3/ClassComponent';
-import LinkPage from './Assign3/LinkPage';
+import {BrowserRouter, Router, Route} from 'react-router-dom';
+import Home from './assign4/Home';
+import ContactUs from './assign4/ContactUs';
+import Students from './assign4/Students';
 
-class App extends React.Component{
-  constructor(){
-    super();
-    this.state = {
-      arr:[],
-    }
-} 
-  updateUsers=(updatedUsers)=>{
-    this.setState({arr:updatedUsers})
-  }
-  render(){
+
+function App() {
   return (
-    <div className="App">
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element = {<ClassComponent users = {this.state.arr} updateUsers = {this.updateUsers}/>}/>
-      <Route path='/LinkPage' element = {<LinkPage users = {this.state.arr}/>}/>
-    </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Router>
+          <Route path='/' element = {<Home/>} ></Route>
+          <Route path='/ContactUs' element = {<ContactUs/>} ></Route>
+          <Route path='/Students' element = {<Students/>} ></Route>
+        </Router>
+      </BrowserRouter>
     </div>
   );
 }
-}
 
 export default App;
-
-
