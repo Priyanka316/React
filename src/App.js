@@ -1,23 +1,32 @@
-// import logo from './logo.svg';
+import React from 'react';
+import Hoc from './Hoc';
+import Parentcomponent from './Components/Parentcomponent';
+import Purecompo from './Components/Purecompo';
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './assign4/Home';
-import ContactUs from './assign4/ContactUs';
-import Students from './assign4/Students';
 
+class App extends React.Component {
+  render() {
+  
+    const { show, increment , decrement} = this.props  
 
-function App() {
-  return (
+    return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element = {<Home/>} ></Route>
-          <Route path='/Students' element = {<Students/>} ></Route>
-          <Route path='/ContactUs' element = {<ContactUs/>} ></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-}
+      <Parentcomponent ></Parentcomponent>    
 
-export default App;
+      <h1>This is the example of HOC</h1>    
+
+      <Purecompo></Purecompo>
+      <h1 id='count'>{show}</h1>
+
+    <button id='btn1' onClick={increment}>Increment </button> 
+    <button id='btn2' onClick={decrement}>Decrement  </button> 
+    
+    
+    </div>
+    ) 
+  }
+}
+  
+  
+export default Hoc(App);
+
