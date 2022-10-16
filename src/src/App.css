@@ -1,15 +1,127 @@
-#btn1,#btn2{
-
-  border-radius: 20px;
-  width: 100px;
-  height: 50px;
-  background-color: rgb(240, 198, 106);
-  size: 40px;
-  margin-top: 50px;
-  margin-left: 300px;
+*{
+  margin: 0%;
+  padding: 0%;
 }
-#count{  
-  size: 40px;
-  margin-top: 90px;
-  margin-left: 330px;
+body{
+  background-image: linear-gradient(pink, lightyellow, lightgreen);
+  height: 1000px;
+}
+
+.Title{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+  padding: 20px;
+  font-size: 25px;
+}
+
+#MainTitle{
+  color: white;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+ }
+ #MainTitle:hover{
+   color: rgb(219, 104, 123);
+ }
+ 
+ #TitlePg{
+   font-weight: bold;
+   font-size: 30px;
+   margin-top: 50px;
+   margin-left: 50px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 40px;
+ }
+ 
+
+#Homepage{
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#studentpage{
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+#btn{
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-size: 25px;
+  margin-left: 1000px;
+  margin-top:-50px; 
+  position: absolute;
+  background-color: #b2f1f1;
+  
+}
+.table{
+  margin-top: 50px;
+  margin-left: 30px;
+ border: none;
+ background-color: white;
+
+}
+th{
+  border-left: none;
+  border-right: none;
+  padding: 10px 70px 10px 70px;
+  background-color: rgb(148, 147, 147);
+}
+tr .table1{
+  padding-right: 400px;
+}
+table{
+  margin-left: 30px;
+  margin-top: 50px;
+  background-color: white;
+}
+td{
+  border-left: none;
+  border-right: none;
+  padding: 10px 70px 10px 70px;
+}
+
+
+
+input{
+   
+  border: 2px solid #f086d7;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  margin: 90px;
+}
+
+.btn{
+  margin-left: 750px;
+}
+
+.btn1{
+  width: 200px;
+  height: 50px;
+  border: 1px solid rgb(104, 104, 151);
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 0 20px;
+  background-color: #babade;
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+.student{
+  margin-left: 150px;
+  
+ 
+}
+.student1{
+  width: auto;
+  height: 900px;
+  border: 1px solid white;
+  background-image: linear-gradient(#de96e3,
+  rgb(233, 209, 147),
+  #f0735d);
 }

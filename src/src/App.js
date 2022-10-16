@@ -1,32 +1,31 @@
-import React from 'react';
-import Hoc from './Hoc';
-import Parentcomponent from './Components/Parentcomponent';
-import Purecompo from './Components/Purecompo';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home';
+import Students from './Components/Students';
+import ContactUs from './Components/Contactus';
+import AddStd from './Components/AddStd';
+import EditStd from './Components/EditStd';
+import Link from './Components/Link';
+import { useState } from 'react';
 
-class App extends React.Component {
-  render() {
-  
-    const { show, increment , decrement} = this.props  
 
-    return (
+
+function App() {
+  const [users,setUsers] = useState([]);
+  return (
     <div>
-      <Parentcomponent ></Parentcomponent>    
-
-      <h1>This is the example of HOC</h1>    
-
-      <Purecompo></Purecompo>
-      <h1 id='count'>{show}</h1>
-
-    <button id='btn1' onClick={increment}>Increment </button> 
-    <button id='btn2' onClick={decrement}>Decrement  </button> 
-    
-    
+     <BrowserRouter>
+     <Link/>
+     <Routes>
+      <Route path ="/" element = {<Home/>}/>
+      <Route path ="/contactus" element = {<ContactUs/>}/>
+      <Route path ='/students' element = {<Students users={users}/>}/>
+      <Route path ='/students/addstudents' element={<AddStd users={users} updateUsers={setUsers}/>}/>
+      <Route path='/students/editstudent/:index' element={<EditStd users={users} updateUsers={setUsers} />}/>
+     </Routes>
+     </BrowserRouter>
     </div>
-    ) 
-  }
+  );
 }
-  
-  
-export default Hoc(App);
 
+export default App;
