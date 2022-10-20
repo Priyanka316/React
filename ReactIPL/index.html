@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Day 1</title>
+</head>
+<body>
+    <h1>1. What is Virtual DOM</h1>
+    <p>Ans: React uses Virtual DOM exists which is like a lightweight copy of the actual DOM(a virtual representation of the DOM). So for every object that exists in the original DOM, there is an object for that in React Virtual DOM. It is exactly the same, but it does not have the power to directly change the layout of the document. Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen. So each time there is a change in the state of our application, the virtual DOM gets updated first instead of the real DOM.</p>
+    <br><br>
+
+    <h1>2. What is SPA</h1>
+    <p>Ans: React is great for single page applications because it allows developers to create applications that are mobile first and responsive. React allows developers to create applications that are fast and easy to update, which is great for mobile applications.</p>
+    <br><br>
+
+    <h1>3. What is difference between class and functional component</h1>
+    <p>Ans: <h4>Functional Components</h4>
+        <ol type="1">
+            <li>Functional Components can be used mostly when you want to create dumb or stateless components</li>
+            <li>These components does not have lifecycle methods, they have hooks like useEffect
+            </li>
+            <li>Complete constructor structure is not required in these components, so they are easy to handle.
+            </li>
+            <li>Do not have state variables, they have hooks like useState
+            </li>       
+        </ol><br>
+
+        <h4>Class Components</h4>
+        <ol type="1">
+            <li>Class components can be used when you are doing data operations and server calls.
+            </li>
+            <li>Contain lifecycle methods
+            </li>
+            <li>Constructor structure is required since these are class components</li>
+            <li>Contains state variables.
+            </li>
+        </ol>
+    </p>
+    <br><br>
+
+    <h1>4. What do you mean by state and its use in react?</h1>
+    <p>Ans: The state is a built-in React object that is used to contain data or information about the component. A component’s state can change over time; whenever it changes, the component re-renders. 
+    State allows us to manage changing data in an application. It's defined as an object where we define key-value pairs specifying various data we want to track in the application. In React, all the code we write is defined inside a component.</p>
+    <br><br>
+
+    <h1>5. What is JSX and why do we use it instead of js?</h1>
+    <p>Ans: JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. JSX converts HTML tags into react elements. You are not required to use JSX, but JSX makes it easier to write React applications.        
+    </p>
+    <br><br>
+
+    <h1>6. What is package.json</h1>
+    <p>Ans: File package.json contains actual JSON, not just a JavaScript object literal. The main purpose of this file is to hold various metadata related to the project. The file is used to provide the information to the node package manager (NPM) that allows identifying the project and its dependencies.
+    The package.json file is a core element in the Node.js ecosystem and is also basic for understanding and working with Node.js, NPM, modern JavaScript, and JavaScript frameworks and libraries.</p>
+    <br><br>
+</body>
+</html>
